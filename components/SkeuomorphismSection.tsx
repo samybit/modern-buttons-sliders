@@ -7,7 +7,7 @@ export default function SkeuomorphismSection() {
         <p className="text-slate-600 mt-2">The Web 2.0 era. Glossy gradients, bevels, inner highlights, and physical realism.</p>
       </div>
 
-      <div className="flex flex-wrap gap-8 items-center">
+      <div className="flex flex-wrap gap-8 items-center mb-12">
         {/* The Classic Mac/iOS Gloss */}
         <button className="px-6 py-2 rounded-full bg-gradient-to-b from-blue-400 to-blue-700 text-white font-bold shadow-[0_2px_4px_rgba(0,0,0,0.4),inset_0_2px_1px_rgba(255,255,255,0.6),inset_0_-2px_1px_rgba(0,0,0,0.2)] border border-blue-800 hover:from-blue-300 hover:to-blue-600 active:from-blue-800 active:to-blue-500 active:shadow-[inset_0_3px_5px_rgba(0,0,0,0.6)] focus:outline-none transition-all">
           Save Changes
@@ -22,30 +22,30 @@ export default function SkeuomorphismSection() {
         <button className="px-6 py-2 rounded-full bg-gradient-to-b from-red-500 to-red-800 text-white font-bold shadow-[0_2px_5px_rgba(0,0,0,0.5),inset_0_2px_2px_rgba(255,255,255,0.4)] border border-red-900 hover:from-red-400 hover:to-red-700 active:shadow-[inset_0_4px_6px_rgba(0,0,0,0.7)] focus:outline-none transition-all">
           Delete
         </button>
+      </div>
 
-        <div className="pt-8 border-t border-slate-300/50 shadow-[0_1px_0_rgba(255,255,255,1)]">
-          <h3 className="text-lg font-bold text-slate-700 drop-shadow-sm mb-6">Master Tuning</h3>
-          <input
-            type="range"
-            defaultValue="40"
-            className="w-full md:w-96 appearance-none bg-transparent focus:outline-none
-            [&::-webkit-slider-runnable-track]:h-4 
-            [&::-webkit-slider-runnable-track]:bg-slate-300 
-            [&::-webkit-slider-runnable-track]:rounded-full 
-            [&::-webkit-slider-runnable-track]:border-t [&::-webkit-slider-runnable-track]:border-slate-400
-            [&::-webkit-slider-runnable-track]:border-b [&::-webkit-slider-runnable-track]:border-white
-            [&::-webkit-slider-runnable-track]:shadow-[inset_0_3px_5px_rgba(0,0,0,0.2)]
-            [&::-webkit-slider-thumb]:appearance-none 
-            [&::-webkit-slider-thumb]:w-8 
-            [&::-webkit-slider-thumb]:h-8 
-            [&::-webkit-slider-thumb]:rounded-full
-            [&::-webkit-slider-thumb]:bg-[linear-gradient(to_bottom,#f3f4f6,#9ca3af)] 
-            [&::-webkit-slider-thumb]:border [&::-webkit-slider-thumb]:border-gray-500
-            [&::-webkit-slider-thumb]:-mt-[9px] 
-            [&::-webkit-slider-thumb]:cursor-pointer 
-            [&::-webkit-slider-thumb]:shadow-[0_3px_5px_rgba(0,0,0,0.5),inset_0_2px_3px_rgba(255,255,255,0.9)]"
-          />
-        </div>
+      <div className="pt-8 border-t border-slate-300/50 shadow-[0_1px_0_rgba(255,255,255,1)]">
+        <h3 className="text-lg font-bold text-slate-700 drop-shadow-sm mb-6">Master Tuning</h3>
+        <input
+          type="range"
+          defaultValue="40"
+          className="w-full md:w-96 appearance-none bg-transparent focus:outline-none
+          [&::-webkit-slider-runnable-track]:h-4 
+          [&::-webkit-slider-runnable-track]:bg-slate-300 
+          [&::-webkit-slider-runnable-track]:rounded-full 
+          [&::-webkit-slider-runnable-track]:border-t [&::-webkit-slider-runnable-track]:border-slate-400
+          [&::-webkit-slider-runnable-track]:border-b [&::-webkit-slider-runnable-track]:border-white
+          [&::-webkit-slider-runnable-track]:shadow-[inset_0_3px_5px_rgba(0,0,0,0.2)]
+          [&::-webkit-slider-thumb]:appearance-none 
+          [&::-webkit-slider-thumb]:w-8 
+          [&::-webkit-slider-thumb]:h-8 
+          [&::-webkit-slider-thumb]:rounded-full
+          [&::-webkit-slider-thumb]:bg-[linear-gradient(to_bottom,#f3f4f6,#9ca3af)] 
+          [&::-webkit-slider-thumb]:border [&::-webkit-slider-thumb]:border-gray-500
+          [&::-webkit-slider-thumb]:-mt-[9px] 
+          [&::-webkit-slider-thumb]:cursor-pointer 
+          [&::-webkit-slider-thumb]:shadow-[0_3px_5px_rgba(0,0,0,0.5),inset_0_2px_3px_rgba(255,255,255,0.9)]"
+        />
       </div>
     </section>
   );

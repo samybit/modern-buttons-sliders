@@ -11,7 +11,7 @@ export default function GlassmorphismSection() {
         <p className="text-white/80 font-medium mt-2">Translucent, frosted-glass effects utilizing backdrop filters and subtle borders.</p>
       </div>
 
-      <div className="relative z-10 flex flex-wrap gap-8 items-center">
+      <div className="relative z-10 flex flex-wrap gap-8 items-center mb-12">
         {/* Clear Glass */}
         <button className="px-8 py-4 rounded-xl bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:bg-white/20 hover:scale-105 transition-all duration-300 focus:outline-none">
           Clear Glass
@@ -26,30 +26,30 @@ export default function GlassmorphismSection() {
         <button className="px-8 py-4 rounded-full bg-white/5 backdrop-blur-sm border-2 border-white/40 text-white font-bold tracking-wide hover:bg-white/10 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] transition-all duration-300 focus:outline-none">
           Frosted Pill
         </button>
+      </div>
 
-        <div className="relative z-10 pt-8 border-t border-white/20">
-          <h3 className="text-2xl font-light tracking-wide text-white mb-6">Intensity Level</h3>
-          <input
-            type="range"
-            defaultValue="70"
-            className="w-full md:w-96 appearance-none bg-transparent focus:outline-none
-            [&::-webkit-slider-runnable-track]:h-3 
-            [&::-webkit-slider-runnable-track]:bg-white/10 
-            [&::-webkit-slider-runnable-track]:backdrop-blur-sm
-            [&::-webkit-slider-runnable-track]:rounded-full 
-            [&::-webkit-slider-runnable-track]:border [&::-webkit-slider-runnable-track]:border-white/30
-            [&::-webkit-slider-thumb]:appearance-none 
-            [&::-webkit-slider-thumb]:w-7 
-            [&::-webkit-slider-thumb]:h-7 
-            [&::-webkit-slider-thumb]:rounded-full
-            [&::-webkit-slider-thumb]:bg-white/80 
-            [&::-webkit-slider-thumb]:backdrop-blur-md
-            [&::-webkit-slider-thumb]:border [&::-webkit-slider-thumb]:border-white
-            [&::-webkit-slider-thumb]:-mt-[9px] 
-            [&::-webkit-slider-thumb]:cursor-pointer 
-            [&::-webkit-slider-thumb]:shadow-[0_0_15px_rgba(255,255,255,0.6)]"
-          />
-        </div>
+      <div className="relative z-10 pt-8 border-t border-white/20">
+        <h3 className="text-2xl font-light tracking-wide text-white mb-6">Intensity Level</h3>
+        <input
+          type="range"
+          defaultValue="70"
+          className="w-full md:w-96 appearance-none bg-transparent focus:outline-none
+          [&::-webkit-slider-runnable-track]:h-3 
+          [&::-webkit-slider-runnable-track]:bg-white/10 
+          [&::-webkit-slider-runnable-track]:backdrop-blur-sm
+          [&::-webkit-slider-runnable-track]:rounded-full 
+          [&::-webkit-slider-runnable-track]:border [&::-webkit-slider-runnable-track]:border-white/30
+          [&::-webkit-slider-thumb]:appearance-none 
+          [&::-webkit-slider-thumb]:w-7 
+          [&::-webkit-slider-thumb]:h-7 
+          [&::-webkit-slider-thumb]:rounded-full
+          [&::-webkit-slider-thumb]:bg-white/80 
+          [&::-webkit-slider-thumb]:backdrop-blur-md
+          [&::-webkit-slider-thumb]:border [&::-webkit-slider-thumb]:border-white
+          [&::-webkit-slider-thumb]:-mt-[9px] 
+          [&::-webkit-slider-thumb]:cursor-pointer 
+          [&::-webkit-slider-thumb]:shadow-[0_0_15px_rgba(255,255,255,0.6)]"
+        />
       </div>
     </section>
   );
