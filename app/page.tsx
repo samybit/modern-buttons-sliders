@@ -2,6 +2,9 @@
 import BrutalistSection from "@/components/BrutalistSection";
 import GlassmorphismSection from "@/components/GlassmorphismSection";
 import NeumorphismSection from "@/components/NeumorphismSection";
+import CyberpunkSection from "@/components/CyberpunkSection";
+import SkeuomorphismSection from "@/components/SkeuomorphismSection";
+import ClaymorphismSection from "@/components/ClaymorphismSection";
 
 export default function Home() {
   return (
@@ -14,6 +17,11 @@ export default function Home() {
       <BrutalistSection />
       <GlassmorphismSection />
       <NeumorphismSection />
+
+      {/* Phase 3 Additions */}
+      <CyberpunkSection />
+      <SkeuomorphismSection />
+      <ClaymorphismSection />
 
     </main>
   );
