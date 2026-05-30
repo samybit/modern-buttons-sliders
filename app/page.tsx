@@ -1,4 +1,5 @@
 // app/page.tsx
+import HeroShowcase from "@/components/HeroShowcase";
 import BrutalistSection from "@/components/BrutalistSection";
 import GlassmorphismSection from "@/components/GlassmorphismSection";
 import NeumorphismSection from "@/components/NeumorphismSection";
@@ -11,23 +12,27 @@ import RetroOsSection from "@/components/RetroOsSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-8 md:p-16 max-w-6xl mx-auto font-sans">
-      <header className="mb-16">
-        <h1 className="text-5xl font-black tracking-tight mb-4 text-black">The Button Archive</h1>
-        <p className="text-xl text-gray-700">Exploring UI across different web design eras and philosophies.</p>
-      </header>
+    <main className="min-h-screen p-8 md:p-16 max-w-7xl mx-auto font-sans">
 
-      <BrutalistSection />
-      <GlassmorphismSection />
-      <NeumorphismSection />
+      {/* The new miniature grid hero */}
+      <HeroShowcase />
 
-      <CyberpunkSection />
-      <SkeuomorphismSection />
-      <ClaymorphismSection />
+      <div className="border-t-2 border-dashed border-gray-300 my-16"></div>
 
-      <LiquidGlassSection />
-      <Tactile3DSection />
-      <RetroOsSection />
+      {/* The full-sized interactive sections */}
+      <div className="space-y-24">
+        <div id="brutalist"><BrutalistSection /></div>
+        <div id="glass"><GlassmorphismSection /></div>
+        <div id="neu"><NeumorphismSection /></div>
+
+        <div id="cyber"><CyberpunkSection /></div>
+        <div id="skeuo"><SkeuomorphismSection /></div>
+        <div id="clay"><ClaymorphismSection /></div>
+
+        <div id="liquid"><LiquidGlassSection /></div>
+        <div id="tactile"><Tactile3DSection /></div>
+        <div id="retro"><RetroOsSection /></div>
+      </div>
 
     </main>
   );
