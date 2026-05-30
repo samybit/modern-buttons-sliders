@@ -1,5 +1,7 @@
 // app/page.tsx
 import BrutalistSection from "@/components/BrutalistSection";
+import GlassmorphismSection from "@/components/GlassmorphismSection";
+import NeumorphismSection from "@/components/NeumorphismSection";
 
 export default function Home() {
   return (
@@ -10,8 +12,9 @@ export default function Home() {
       </header>
 
       <BrutalistSection />
+      <GlassmorphismSection />
+      <NeumorphismSection />
 
-      {/* Future sections will go here */}
     </main>
   );
 }
