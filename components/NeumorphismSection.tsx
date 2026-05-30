@@ -24,6 +24,28 @@ export default function NeumorphismSection() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
           </svg>
         </button>
+
+        <div className="pt-8">
+          <h3 className="text-xl font-medium text-[#4b5563] mb-6">Volume Control</h3>
+          <input
+            type="range"
+            defaultValue="30"
+            className="w-full md:w-96 appearance-none bg-transparent focus:outline-none
+            [&::-webkit-slider-runnable-track]:h-4 
+            [&::-webkit-slider-runnable-track]:bg-[#e0e5ec] 
+            [&::-webkit-slider-runnable-track]:rounded-full 
+            [&::-webkit-slider-runnable-track]:shadow-[inset_4px_4px_8px_rgba(163,177,198,0.7),inset_-4px_-4px_8px_rgba(255,255,255,0.6)]
+            [&::-webkit-slider-thumb]:appearance-none 
+            [&::-webkit-slider-thumb]:w-8 
+            [&::-webkit-slider-thumb]:h-8 
+            [&::-webkit-slider-thumb]:rounded-full
+            [&::-webkit-slider-thumb]:bg-[#e0e5ec] 
+            [&::-webkit-slider-thumb]:-mt-[8px] 
+            [&::-webkit-slider-thumb]:cursor-pointer 
+            [&::-webkit-slider-thumb]:shadow-[4px_4px_8px_rgba(163,177,198,0.7),-4px_-4px_8px_rgba(255,255,255,0.6)]
+            active:[&::-webkit-slider-thumb]:shadow-[inset_2px_2px_4px_rgba(163,177,198,0.7),inset_-2px_-2px_4px_rgba(255,255,255,0.6)]"
+          />
+        </div>
       </div>
     </section>
   );

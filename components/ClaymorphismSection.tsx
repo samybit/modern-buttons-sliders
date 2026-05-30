@@ -22,6 +22,28 @@ export default function ClaymorphismSection() {
         <button className="px-12 py-4 rounded-full bg-emerald-300 text-emerald-900 font-bold text-lg shadow-[6px_6px_14px_rgba(110,231,183,0.5),inset_3px_3px_6px_rgba(255,255,255,0.6),inset_-3px_-3px_6px_rgba(6,78,59,0.2)] hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none">
           Confirm
         </button>
+
+        <div className="pt-8">
+          <h3 className="text-xl font-bold text-indigo-800 mb-6">Pressure</h3>
+          <input
+            type="range"
+            defaultValue="65"
+            className="w-full md:w-96 appearance-none bg-transparent focus:outline-none
+            [&::-webkit-slider-runnable-track]:h-6 
+            [&::-webkit-slider-runnable-track]:bg-indigo-200/50 
+            [&::-webkit-slider-runnable-track]:rounded-full 
+            [&::-webkit-slider-runnable-track]:shadow-[inset_3px_3px_6px_rgba(49,46,129,0.15),inset_-3px_-3px_6px_rgba(255,255,255,0.8)]
+            [&::-webkit-slider-thumb]:appearance-none 
+            [&::-webkit-slider-thumb]:w-10 
+            [&::-webkit-slider-thumb]:h-10 
+            [&::-webkit-slider-thumb]:rounded-full
+            [&::-webkit-slider-thumb]:bg-rose-400 
+            [&::-webkit-slider-thumb]:-mt-[8px] 
+            [&::-webkit-slider-thumb]:cursor-pointer 
+            [&::-webkit-slider-thumb]:shadow-[4px_4px_8px_rgba(251,113,133,0.4),inset_3px_3px_6px_rgba(255,255,255,0.5),inset_-3px_-3px_6px_rgba(159,18,57,0.3)]
+            active:[&::-webkit-slider-thumb]:scale-95"
+          />
+        </div>
       </div>
     </section>
   );
