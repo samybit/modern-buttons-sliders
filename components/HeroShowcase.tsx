@@ -8,6 +8,9 @@ import ClaymorphismSection from "./ClaymorphismSection";
 import LiquidGlassSection from "./LiquidGlassSection";
 import Tactile3DSection from "./Tactile3DSection";
 import RetroOsSection from "./RetroOsSection";
+import FrutigerAeroSection from "./FrutigerAeroSection";
+import PixelArtSection from "./PixelArtSection";
+import Y2KSection from "./Y2KSection";
 
 const showcases = [
   { id: "brutalist", name: "Brutalist", component: BrutalistSection },
@@ -19,6 +22,9 @@ const showcases = [
   { id: "liquid", name: "Liquid Glass", component: LiquidGlassSection },
   { id: "tactile", name: "Tactile 3D", component: Tactile3DSection },
   { id: "retro", name: "Retro OS", component: RetroOsSection },
+  { id: "frutiger", name: "Frutiger Aero", component: FrutigerAeroSection },
+  { id: "pixel", name: "Pixel Art", component: PixelArtSection },
+  { id: "y2k", name: "Y2K", component: Y2KSection },
 ];
 
 export default function HeroShowcase() {

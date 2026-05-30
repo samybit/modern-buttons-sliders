@@ -9,6 +9,9 @@ import ClaymorphismSection from "@/components/ClaymorphismSection";
 import LiquidGlassSection from "@/components/LiquidGlassSection";
 import Tactile3DSection from "@/components/Tactile3DSection";
 import RetroOsSection from "@/components/RetroOsSection";
+import FrutigerAeroSection from "@/components/FrutigerAeroSection";
+import PixelArtSection from "@/components/PixelArtSection";
+import Y2KSection from "@/components/Y2KSection";
 
 export default function Home() {
   return (
@@ -32,6 +35,10 @@ export default function Home() {
         <div id="liquid"><LiquidGlassSection /></div>
         <div id="tactile"><Tactile3DSection /></div>
         <div id="retro"><RetroOsSection /></div>
+
+        <div id="frutiger"><FrutigerAeroSection /></div>
+        <div id="pixel"><PixelArtSection /></div>
+        <div id="y2k"><Y2KSection /></div>
       </div>
 
     </main>
