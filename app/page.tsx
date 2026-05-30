@@ -5,6 +5,9 @@ import NeumorphismSection from "@/components/NeumorphismSection";
 import CyberpunkSection from "@/components/CyberpunkSection";
 import SkeuomorphismSection from "@/components/SkeuomorphismSection";
 import ClaymorphismSection from "@/components/ClaymorphismSection";
+import LiquidGlassSection from "@/components/LiquidGlassSection";
+import Tactile3DSection from "@/components/Tactile3DSection";
+import RetroOsSection from "@/components/RetroOsSection";
 
 export default function Home() {
   return (
@@ -18,10 +21,13 @@ export default function Home() {
       <GlassmorphismSection />
       <NeumorphismSection />
 
-      {/* Phase 3 Additions */}
       <CyberpunkSection />
       <SkeuomorphismSection />
       <ClaymorphismSection />
+
+      <LiquidGlassSection />
+      <Tactile3DSection />
+      <RetroOsSection />
 
     </main>
   );
