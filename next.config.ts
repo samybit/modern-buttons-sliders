@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
 
@@ -7,7 +9,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
 
-  basePath: '/modern-buttons-sliders',
+  basePath: isProd ? '/modern-buttons-sliders' : '',
 };
 
 export default nextConfig;
