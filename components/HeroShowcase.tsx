@@ -35,34 +35,34 @@ const showcases = [
 
 export default function HeroShowcase() {
   return (
-    <section className="mb-24">
-      <div className="mb-12 text-center">
-        <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-4">Design Archive Overview</h2>
-        <h1 className="text-5xl md:text-6xl font-black tracking-tighter text-black mb-6">
+    <section className="min-h-[90vh] flex flex-col justify-center mb-16 py-8">
+      <div className="mb-10 text-center">
+        <h2 className="text-xs md:text-sm font-bold tracking-widest text-gray-500 uppercase mb-3">Design Archive Overview</h2>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter text-black mb-4">
           Choose Your Aesthetic.
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          A collection of 9 distinct UI philosophies. Interactive, scalable, and built with Next.js 16 and Tailwind v4.
+        <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+          A collection of 15 distinct UI philosophies. Interactive, scalable, and built with Next.js 16 and Tailwind v4.
         </p>
       </div>
 
-      {/* The 3x3 Bento Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* Compact 5-column grid for one-screen view */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {showcases.map((Item) => (
           <div
             key={Item.id}
-            className="group relative h-[250px] w-full rounded-2xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+            className="group relative h-[140px] md:h-[160px] w-full rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
-            <div className="absolute top-0 left-0 w-[1000px] h-[800px] origin-top-left scale-[0.35] pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity">
+            <div className="absolute top-0 left-0 w-[1200px] h-[800px] origin-top-left scale-[0.18] sm:scale-[0.2] md:scale-[0.22] pointer-events-none opacity-70 group-hover:opacity-100 transition-opacity">
               <Item.component />
             </div>
 
             {/* Overlay to catch clicks (prevents messing with mini-sliders) and show a label */}
-            <div className="absolute inset-0 z-10 flex items-end p-6 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="text-white font-bold text-lg drop-shadow-md">{Item.name}</span>
+            <div className="absolute inset-0 z-10 flex items-end p-4 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span className="text-white font-bold text-sm md:text-base drop-shadow-md">{Item.name}</span>
             </div>
 
-            {/* Clickable link to jump to the actual section (requires adding IDs to your sections later if you want smooth scroll) */}
+            {/* Clickable link to jump to the actual section */}
             <a href={`#${Item.id}`} className="absolute inset-0 z-20 cursor-pointer">
               <span className="sr-only">Jump to {Item.name}</span>
             </a>

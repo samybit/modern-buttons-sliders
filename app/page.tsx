@@ -18,12 +18,12 @@ import MaterialDesignSection from "@/components/MaterialDesignSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-8 md:p-16 max-w-7xl mx-auto font-sans">
+    <main className="min-h-screen p-4 md:p-8 lg:p-12 max-w-[100rem] mx-auto font-sans">
 
-      {/* The new miniature grid hero */}
+      {/* The full-screen miniature grid hero */}
       <HeroShowcase />
 
-      <div className="border-t-2 border-dashed border-gray-300 my-16"></div>
+      <div className="border-t-2 border-dashed border-gray-300 my-12"></div>
 
       {/* The full-sized interactive sections */}
       <div className="space-y-24">
