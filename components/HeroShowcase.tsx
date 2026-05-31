@@ -49,24 +49,23 @@ export default function HeroShowcase() {
       {/* Compact 5-column grid for one-screen view */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {showcases.map((Item) => (
-          <div
+          <a
             key={Item.id}
-            className="group relative h-[100px] md:h-[120px] w-full rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            href={`#${Item.id}`}
+            className="group relative flex items-center justify-center h-20 md:h-24 w-full rounded-xl bg-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-all border border-gray-200/50"
           >
-            <div className="absolute top-0 left-0 w-[1200px] h-[800px] origin-top-left scale-[0.15] sm:scale-[0.18] md:scale-[0.2] pointer-events-none opacity-70 group-hover:opacity-100 transition-opacity">
+            {/* Miniature Preview */}
+            <div className="absolute top-0 left-0 w-[1000px] h-[800px] origin-top-left scale-[0.18] md:scale-[0.22] pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity">
               <Item.component />
             </div>
-
-            {/* Overlay to catch clicks (prevents messing with mini-sliders) and show a label */}
-            <div className="absolute inset-0 z-10 flex items-end p-4 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span className="text-white font-bold text-sm md:text-base drop-shadow-md">{Item.name}</span>
+            
+            {/* Dark Overlay & Label */}
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 group-hover:bg-black/30 transition-colors duration-300">
+              <span className="text-white font-bold text-sm md:text-base tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+                {Item.name}
+              </span>
             </div>
-
-            {/* Clickable link to jump to the actual section */}
-            <a href={`#${Item.id}`} className="absolute inset-0 z-20 cursor-pointer">
-              <span className="sr-only">Jump to {Item.name}</span>
-            </a>
-          </div>
+          </a>
         ))}
       </div>
     </section>
