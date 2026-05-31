@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  // GitHub Pages requires unoptimized images if you are using the Next.js <Image> component
+  images: {
+    unoptimized: true,
+  },
+
+  basePath: '/modern-buttons-sliders',
 };
 
 export default nextConfig;
