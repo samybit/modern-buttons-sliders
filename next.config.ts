@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   output: 'export',
 
-  // GitHub Pages requires unoptimized images if you are using the Next.js <Image> component
   images: {
     unoptimized: true,
   },
@@ -11,3 +11,5 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
+
