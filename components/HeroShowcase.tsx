@@ -51,9 +51,9 @@ export default function HeroShowcase() {
         {showcases.map((Item) => (
           <div
             key={Item.id}
-            className="group relative h-[140px] md:h-[160px] w-full rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            className="group relative h-[100px] md:h-[120px] w-full rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
-            <div className="absolute top-0 left-0 w-[1200px] h-[800px] origin-top-left scale-[0.18] sm:scale-[0.2] md:scale-[0.22] pointer-events-none opacity-70 group-hover:opacity-100 transition-opacity">
+            <div className="absolute top-0 left-0 w-[1200px] h-[800px] origin-top-left scale-[0.15] sm:scale-[0.18] md:scale-[0.2] pointer-events-none opacity-70 group-hover:opacity-100 transition-opacity">
               <Item.component />
             </div>
 

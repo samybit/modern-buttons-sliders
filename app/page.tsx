@@ -18,7 +18,7 @@ import MaterialDesignSection from "@/components/MaterialDesignSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen p-4 md:p-8 lg:p-12 max-w-[100rem] mx-auto font-sans">
+    <main className="min-h-screen p-4 md:p-8 lg:p-12 max-w-7xl mx-auto font-sans">
 
       {/* The full-screen miniature grid hero */}
       <HeroShowcase />
