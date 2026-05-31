@@ -12,6 +12,9 @@ import RetroOsSection from "@/components/RetroOsSection";
 import FrutigerAeroSection from "@/components/FrutigerAeroSection";
 import PixelArtSection from "@/components/PixelArtSection";
 import Y2KSection from "@/components/Y2KSection";
+import BauhausSection from "@/components/BauhausSection";
+import WireframeSection from "@/components/WireframeSection";
+import MaterialDesignSection from "@/components/MaterialDesignSection";
 
 export default function Home() {
   return (
@@ -39,6 +42,10 @@ export default function Home() {
         <div id="frutiger"><FrutigerAeroSection /></div>
         <div id="pixel"><PixelArtSection /></div>
         <div id="y2k"><Y2KSection /></div>
+
+        <div id="bauhaus"><BauhausSection /></div>
+        <div id="wireframe"><WireframeSection /></div>
+        <div id="material"><MaterialDesignSection /></div>
       </div>
 
     </main>

@@ -11,6 +11,9 @@ import RetroOsSection from "./RetroOsSection";
 import FrutigerAeroSection from "./FrutigerAeroSection";
 import PixelArtSection from "./PixelArtSection";
 import Y2KSection from "./Y2KSection";
+import BauhausSection from "./BauhausSection";
+import WireframeSection from "./WireframeSection";
+import MaterialDesignSection from "./MaterialDesignSection";
 
 const showcases = [
   { id: "brutalist", name: "Brutalist", component: BrutalistSection },
@@ -24,7 +27,10 @@ const showcases = [
   { id: "retro", name: "Retro OS", component: RetroOsSection },
   { id: "frutiger", name: "Frutiger Aero", component: FrutigerAeroSection },
   { id: "pixel", name: "Pixel Art", component: PixelArtSection },
-  { id: "y2k", name: "Y2K", component: Y2KSection },
+  { id: "y2k", name: "Y2K Chrome", component: Y2KSection },
+  { id: "bauhaus", name: "Bauhaus", component: BauhausSection },
+  { id: "wireframe", name: "Blueprint", component: WireframeSection },
+  { id: "material", name: "Material Design", component: MaterialDesignSection },
 ];
 
 export default function HeroShowcase() {
