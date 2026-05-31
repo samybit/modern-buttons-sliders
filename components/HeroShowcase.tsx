@@ -14,6 +14,10 @@ import Y2KSection from "./Y2KSection";
 import BauhausSection from "./BauhausSection";
 import WireframeSection from "./WireframeSection";
 import MaterialDesignSection from "./MaterialDesignSection";
+import HolographicSection from "./HolographicSection";
+import AuroraSection from "./AuroraSection";
+import ExtremeDarkSection from "./ExtremeDarkSection";
+
 
 const showcases = [
   { id: "brutalist", name: "Brutalist", component: BrutalistSection },
@@ -31,6 +35,9 @@ const showcases = [
   { id: "bauhaus", name: "Bauhaus", component: BauhausSection },
   { id: "wireframe", name: "Blueprint", component: WireframeSection },
   { id: "material", name: "Material Design", component: MaterialDesignSection },
+  { id: "holographic", name: "Holographic", component: HolographicSection },
+  { id: "aurora", name: "Aurora Ambient", component: AuroraSection },
+  { id: "extremedark", name: "Extreme Dark", component: ExtremeDarkSection },
 ];
 
 export default function HeroShowcase() {
@@ -42,7 +49,7 @@ export default function HeroShowcase() {
           Choose Your Aesthetic.
         </h1>
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-          A collection of 15 distinct UI philosophies. Interactive, scalable, and built with Next.js 16 and Tailwind v4.
+          A collection of 18 distinct UI philosophies. Interactive, scalable, and built with Next.js 16 and Tailwind v4.
         </p>
       </div>
 
@@ -58,7 +65,7 @@ export default function HeroShowcase() {
             <div className="absolute top-0 left-0 w-[1000px] h-[800px] origin-top-left scale-[0.18] md:scale-[0.22] pointer-events-none opacity-90 group-hover:opacity-100 transition-opacity">
               <Item.component />
             </div>
-            
+
             {/* Dark Overlay & Label */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/50 group-hover:bg-black/30 transition-colors duration-300">
               <span className="text-white font-bold text-sm md:text-base tracking-wide drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">

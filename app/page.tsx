@@ -15,6 +15,10 @@ import Y2KSection from "@/components/Y2KSection";
 import BauhausSection from "@/components/BauhausSection";
 import WireframeSection from "@/components/WireframeSection";
 import MaterialDesignSection from "@/components/MaterialDesignSection";
+import HolographicSection from "@/components/HolographicSection";
+import AuroraSection from "@/components/AuroraSection";
+import ExtremeDarkSection from "@/components/ExtremeDarkSection";
+
 
 export default function Home() {
   return (
@@ -46,6 +50,10 @@ export default function Home() {
         <div id="bauhaus"><BauhausSection /></div>
         <div id="wireframe"><WireframeSection /></div>
         <div id="material"><MaterialDesignSection /></div>
+
+        <div id="holographic"><HolographicSection /></div>
+        <div id="aurora"><AuroraSection /></div>
+        <div id="extremedark"><ExtremeDarkSection /></div>
       </div>
 
     </main>
