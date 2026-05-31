@@ -17,6 +17,8 @@ import MaterialDesignSection from "./MaterialDesignSection";
 import HolographicSection from "./HolographicSection";
 import AuroraSection from "./AuroraSection";
 import ExtremeDarkSection from "./ExtremeDarkSection";
+import NeoBrutalismSection from "./NeoBrutalismSection";
+import ModernFintechSection from "./ModernFintechSection";
 
 
 const showcases = [
@@ -38,6 +40,8 @@ const showcases = [
   { id: "holographic", name: "Holographic", component: HolographicSection },
   { id: "aurora", name: "Aurora Ambient", component: AuroraSection },
   { id: "extremedark", name: "Extreme Dark", component: ExtremeDarkSection },
+  { id: "neobrutalism", name: "Neo-Brutalism", component: NeoBrutalismSection },
+  { id: "fintech", name: "Modern FinTech", component: ModernFintechSection },
 ];
 
 export default function HeroShowcase() {
@@ -49,7 +53,7 @@ export default function HeroShowcase() {
           Choose Your Aesthetic.
         </h1>
         <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-          A collection of 18 distinct UI philosophies. Interactive, scalable, and built with Next.js 16 and Tailwind v4.
+          A collection of 20 distinct UI philosophies. Interactive, scalable, and built with Next.js 16 and Tailwind v4.
         </p>
       </div>
 

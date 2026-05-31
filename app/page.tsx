@@ -18,6 +18,8 @@ import MaterialDesignSection from "@/components/MaterialDesignSection";
 import HolographicSection from "@/components/HolographicSection";
 import AuroraSection from "@/components/AuroraSection";
 import ExtremeDarkSection from "@/components/ExtremeDarkSection";
+import NeoBrutalismSection from "@/components/NeoBrutalismSection";
+import ModernFintechSection from "@/components/ModernFintechSection";
 
 
 export default function Home() {
@@ -54,6 +56,9 @@ export default function Home() {
         <div id="holographic"><HolographicSection /></div>
         <div id="aurora"><AuroraSection /></div>
         <div id="extremedark"><ExtremeDarkSection /></div>
+
+        <div id="neobrutalism"><NeoBrutalismSection /></div>
+        <div id="fintech"><ModernFintechSection /></div>
       </div>
 
     </main>
